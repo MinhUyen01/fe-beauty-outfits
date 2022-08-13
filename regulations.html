@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Outfits</title>
+    <link rel="icon" href="./assets/img/icons8-wedding-dress-96.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="https://kit.fontawesome.com/66bd468443.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=MonteCarlo&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__authentication">
+                    <ul class="header__authentication-list">
+                        <li class="header__authentication-item header__authentication-item--separate js-register">
+                            Đăng ký
+                        </li>
+
+                        <li class="header__authentication-item js-login">
+                            Đăng nhập
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header__navbar">
+                    <div class="header__logo">
+                        <a href="index.html" class="header__logo-link">
+                            Beauty Outfits
+                        </a>
+                    </div>
+                    <div class="header__menu">
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item">
+                                <a href="index.html" class="header__menu-item-link">
+                                    Trang chủ
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="intro.html" class="header__menu-item-link">
+                                Giới thiệu
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="#" class="header__menu-item-link">
+                                    Trang phục
+                                    <i class="header__menu-item-icon fa-solid fa-angle-down"></i>
+                                </a>
+    
+                                <ul class="header__subnav-list">
+                                    <li class="header__subnav-item">
+                                        <a href="all_outfits.html">Tất cả</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="children.html">Thiếu nhi</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="traditional.html">Truyền thống</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="foreign.html">Các nước</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="disguise.html">Hóa trang</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="normal.html">Thường ngày</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="banquet.html">Dự tiệc</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="#" class="header__menu-item-link">
+                                Phụ kiện
+                                <i class="header__menu-item-icon fa-solid fa-angle-down"></i>
+                                </a>
+    
+                                <ul class="header__subnav-list header__subnav-list-none ">
+                                    <li class="header__subnav-item">
+                                        <a href="all_accessories.html">Tất cả</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="hats_and_wigs.html">Mũ & tóc giả</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="tie_and_bow.html">Cà vạt & nơ</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="footwear.html">Giày dép</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="handbag.html">Túi xách</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="brooch.html">Trâm cài tóc</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="fan.html">Quạt</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="#" class="header__menu-item-link">
+                                Quy định thuê
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="contact.html" class="header__menu-item-link">
+                                Liên hệ
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    
+                    <div class="header__search-cart">
+                        <div class="header__search-cart-container">
+                            <div class="header__search">
+                                <i class="header__search-icon fa-solid fa-magnifying-glass"></i>
+                                <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm">
+                            </div>
+                            <div class="header__cart">
+                                <!-- <div class="header__cart-wrap"> -->
+                                    <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                                    <span class="header__cart-notice">3</span>
+    
+                                    <!-- No cart: ko có sản phẩm trong giỏ hàng
+                                        header__cart-list--no-cart -->
+                                    <div class="header__cart-list">
+                                        <img src="./assets/img/empty-cart.jpg" alt="" class="header__cart-no-cart-img">
+                                        <span class="header__cart-list-no-cart-msg">
+                                            Chưa có sản phẩm
+                                        </span>
+
+                                        <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                                        <ul class="header__cart-list-item">
+                                            <!-- Cart item -->
+                                            <li class="header__cart-item">
+                                                <img src="./assets/img/products-rent-a-lot/hanphuccotrang.jfif" alt="" class="header__cart-img">
+                                                <div class="header__cart-item-info">
+                                                    <div class="header__cart-item-head">
+                                                        <h5 class="header__cart-item-name">Hán phục cổ trang Trung Quốc Cung Vũ bộ 3 mảnh váy 3 mét, 6 mét kèm áo choàng giá rẻ</h5>
+                                                        <div class="header__cart-item-price-wrap">
+                                                            <span class="header__cart-item-price">209.000đ</span>
+                                                            <span class="header__cart-item-multiply">x</span>
+                                                            <span class="header__cart-item-qnt">2</span>
+                                                        </div>
+                                                    </div>
+        
+                                                    <div class="header__cart-item-body">
+                                                        <span class="header__cart-item-description">
+                                                            Phân loại: Size M
+                                                        </span>
+                                                        <span class="header__cart-item-remove">Xóa</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+        
+                                            <li class="header__cart-item">
+                                                <img src="./assets/img/products-rent-a-lot/thuongngay.jfif" alt="" class="header__cart-img">
+                                                <div class="header__cart-item-info">
+                                                    <div class="header__cart-item-head">
+                                                        <h5 class="header__cart-item-name">Đầm tiểu thư trắng dự tiệc ulzzang chụp kỉ yếu siêu xịn</h5>
+                                                        <div class="header__cart-item-price-wrap">
+                                                            <span class="header__cart-item-price">109.000đ</span>
+                                                            <span class="header__cart-item-multiply">x</span>
+                                                            <span class="header__cart-item-qnt">1</span>
+                                                        </div>
+                                                    </div>
+        
+                                                    <div class="header__cart-item-body">
+                                                        <span class="header__cart-item-description">
+                                                            Phân loại: Size M
+                                                        </span>
+                                                        <span class="header__cart-item-remove">Xóa</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+        
+                                            <li class="header__cart-item">
+                                                <img src="./assets/img/products-rent-a-lot/thuongngay2.jfif" alt="" class="header__cart-img">
+                                                <div class="header__cart-item-info">
+                                                    <div class="header__cart-item-head">
+                                                        <h5 class="header__cart-item-name">Set bikini đi biển 2 mảnh 3 món sexy đẹp</h5>
+                                                        <div class="header__cart-item-price-wrap">
+                                                            <span class="header__cart-item-price">145.000đ</span>
+                                                            <span class="header__cart-item-multiply">x</span>
+                                                            <span class="header__cart-item-qnt">2</span>
+                                                        </div>
+                                                    </div>
+        
+                                                    <div class="header__cart-item-body">
+                                                        <span class="header__cart-item-description">
+                                                            Phân loại: Size M
+                                                        </span>
+                                                        <span class="header__cart-item-remove">Xóa</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            
+                                            
+                                            
+                                        </ul>
+                                        <a href="view_cart.html" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
+                                    </div>
+                                
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="app__container">
+            <div class="grid">
+                <div class="grid__row regulations__container">
+                    <div class="regulations__para-container">
+                        <p class="regulations__heading">
+                            QUY ĐỊNH THUÊ
+                        </p>
+
+                        <p class="regulations__sub-heading1">
+                            I. Thủ tục thuê
+                        </p>
+
+                        <p class="regulations__sub-heading2">
+                            1. Đặt hàng chưa đến ngày nhận
+                        </p>
+
+                        <p class="regulations__description">
+                            &nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quý khách đặt cọc 50% giá trị đơn hàng để chúng tôi giữ đúng số lượng trang phục quý khách đặt vào
+                            đúng ngày quý khách cần. <br>
+
+                            &nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trong trường hợp đã đặt cọc chúng tôi sẽ không hoàn trả tiền cọc khi chương trình của quý khách bị
+                            hủy/thay đổi với bất kì lí do gì 
+                        </p>
+
+                        <p class="regulations__sub-heading2">
+                            2. Nhận đồ diễn
+                        </p>
+
+                        <p class="regulations__description">
+                            &nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Khi thuê đồ tại Beauty Outfits, quý khách cần thanh toán 100% giá trị tiền thuê + thế chân tiền + để lại
+                            giấy tờ bản gốc. Những giấy tờ được chấp nhận: Giấy CMND/Thẻ Căn Cước, Hộ chiếu, Giấy Tờ Xe,
+                            Bằng Lái Xe, Thẻ Học sinh - Sinh viên. <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. Trường hợp hóa đơn thuê có giá trị <= 1.000.000: <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“Thanh toán 100% tiền thuê + Thế chân 200.000 đồng + Để lại giấy tờ gốc"<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. Trường hợp hóa đơn thuê có giá trị > 1.000.000: <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Thanh toán 100% tiền thuê + Thế chân 500.000 đồng + Để lại giấy tờ gốc" <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c. Trường hợp, quý khách đã cọc 50% giá trị đơn hàng thì: <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“Thanh toán đủ số tiền còn lại+ Để lại giấy tờ bản gốc + Thế chân 200.000 đồng hoặc 500.000 đồng
+                            tùy theo tổng giá trị hóa đơn như mục (a) và (b)”
+                        </p>
+                        
+                        <p class="regulations__sub-heading2">
+                            3. Chú ý
+                        </p>
+
+                        <p class="regulations__description">
+                            &nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quý khách không mang giấy tờ:“Thế chân 100% giá trị từng sản phẩm thuê” <br>
+
+                            &nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quý khách đã đem trang phục ra khỏi cửa hàng, chúng tôi sẵn sàng đổi size nếu không vừa (chỉ lựa chọn những size còn lại tại cửa hàng), không chấp nhận trường hợp quý khách muốn trả đồ lấy lại tiền. 
+                        </p>
+
+                        <p class="regulations__sub-heading1">
+                            II. Thời gian làm việc
+                        </p>
+
+                        <p class="regulations__description">
+                            &nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thứ 2–7: từ 08h00 đến 17h30. Nghỉ trưa từ 12h00 đến 13h00.<br>
+                            &nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chủ nhật: từ 08h00 đến 11h00. Quý khách vui lòng gọi trước khi đến thuê! <br> 
+                            &nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thời gian thuê được tính theo“Gói dịch vụ 3 ngày tính tiền 1ngày”, từ ngày nhận đồ không tính sáng
+                            hay chiều.<br> 
+                            &nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nếu quý khách có nhu cầu tăng thời gian thuê, SHOP sẽ tính thêm phí, căn cứ vào số ngày tăng. <br> 
+                            
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. Tăng 1 ngày: 	+40% giá trị đơn hàng<br> 
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. Tăng 2 ngày: 	+60% giá trị đơn hàng<br> 
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c. Tăng 3 ngày:	+100% giá trị đơn hàng<br> 
+                            Ví Dụ: Thuê 14/10/2014 ngày trả là 16/10/2014. <br>
+                            &nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nếu Quý khách thuê dài hạn Cửa hàng sẽ hỗ trợ giảm giá.<br> 
+                            &nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nếu Quý khách thuê và trả trong ngày trước 18h00 trên 200.000 sẽ giảm 20% trên hóa đơn.<br> 
+                            &nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Riêng ngày Lễ, tết ... thời gian thuê sẽ tính theo gói 2 ngày tính 1 tiền ngày.<br> 
+                            (Sẽ tư vấn trực tiếp cụ thể qua điện thoại hoặc quý khách đến trực tiếp.)
+                        </p>
+
+                        <p class="regulations__sub-heading1">
+                            III. Trách nhiệm bên thuê
+                        </p>
+                        <p class="regulations__description">
+                            &nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quý khách kiểm tra kỹ trang phục, đạo cụ, phụ kiện đính kèm khi nhận sản phẩm. Shop sẽ không chịu trách nhiệm như thiếu số lượng, hư hỏng, ... sau khi bàn giao. <br>
+
+                            &nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trong thời gian sử dụng, quý khách có trách nhiệm bảo quản tốt như khi được giao. Mọi phát sinh như hư hỏng, rách, sờn vải, lem màu, sai khác kiểu dáng ban đầu, 
+                            thiếu số lượng, dính bẩn nhiều (quý khách phải tự giặt hoặc tính phụ thu giặt), .... nếu không thể khắc phục Quý khách phải bồi hoàn giá trị từng sản phẩm đó.  
+                        </p>
+                        <p class="regulations__sub-heading1">
+                            IV. Trách nhiệm cửa hàng
+                        </p>
+
+                        <p class="regulations__description">
+                            &nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trang phục tại cửa hàng luôn trong tình trạng sử dụng tốt, được giặt sạch sẽ, số lượng đầy đủ, nội dung chính xác theo hóa đơn có ký nhận 2 bên.<br>
+
+                            &nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Giảm giá cho số lượng thuê lớn, hs-sv, .... Thường xuyên có chương trình khuyến mãi (sẽ được thông báo). <br> 
+                            &nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Có hóa đơn tài chính.<br> 
+                            &nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nhận giao hàng khi đã xác nhận đơn đặt hàng, không đem mẫu ra ngoài thử, phí vận chuyển tùy khu vực sẽ được cửa hàng hỗ trợ 1 phần. Cửa hàng có hỗ trợ nhận đi lấy vào ngày quý khách trả.<br> 
+                        </p>
+
+                        <!-- <p>
+                            ●&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Hướng dẫn thuê</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Thanh toán</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Vận chuyển</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Về Beauty Outfits</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Giới thiệu</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Tuyển dụng</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Điều khoản</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Danh mục</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Trang phục</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Phụ kiện</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Kết nối với chúng tôi</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fa-brands fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fa-brands fa-instagram"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fa-brands fa-linkedin"></i>
+                                    Linkedin
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Công ty Beauty Outfits</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <p>
+                                    Hotline: 
+                                    <a href="tel:0967177830" class="footer-item__phone">0967177830</a>
+                                </p>
+                            </li>
+                            <li class="footer-item">
+                                <p>
+                                    Email: 
+                                    <a href="mailto:uyentran99899@gmail.com" class="footer-item__email">uyentran99899@gmail.com</a>
+                                </p>
+                            </li>
+                            <li class="footer-item">
+                                <p class="footer-item__location">Địa chỉ: Q. Ngũ Hành Sơn, TP. Đà Nẵng </p>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="grid">
+                    <p class="footer__text">© 2022 - Bản quyền thuộc về Trần Thị Minh Uyên</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal layout -->
+    <div class="modal js-modal">
+        <div class="modal__overlay">
+
+        </div>
+        <div class="modal__body js-modal-body">
+            <!-- Register form -->
+            <div class="auth-form js-auth-form-register">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng ký</h3>
+                        <span class="auth-form__switch-btn js-auth-form-btn-login">Đăng nhập</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                        </div>
+
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                        </div>
+                    </div>
+                    
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">
+                            Bằng việc đăng ký, bạn đã đồng ý với Beauty Outfits về 
+                            <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                            <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn btn--normal auth-form__controls-back">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-facebook-square"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Facebook
+                        </span>
+                    </a>
+
+                    <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Google
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Login form -->
+            <div class="auth-form js-auth-form-login">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng nhập</h3>
+                        <span class="auth-form__switch-btn js-auth-form-btn-register">Đăng ký</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                        </div>
+
+                    </div>
+                    
+                    <div class="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                            <span class="auth-form__help-separata"></span>
+                            <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn btn--normal auth-form__controls-back">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                    </div>
+                </div>
+
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-facebook-square"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Facebook
+                        </span>
+                    </a>
+
+                    <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Google
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const register = document.querySelector ('.js-register')
+        const modal = document.querySelector('.js-modal')
+        const modalBody = document.querySelector('.js-modal-body')
+        const authFormBtnLogin = document.querySelector ('.js-auth-form-btn-login')
+        const autFormRegister = document.querySelector('.js-auth-form-register')
+        const autFormLogin = document.querySelector('.js-auth-form-login')
+
+        const login = document.querySelector ('.js-login')
+        const authFormBtnRegister = document.querySelector ('.js-auth-form-btn-register')
+
+        // Hàm hiển thị modal (thêm class open vào modal)
+        function showModal() {
+            // alert("SHOW")
+            modal.classList.add('open')
+        }
+
+        // đăng ký
+        function showauthFormRegister() {
+            // alert("SHOW")
+            autFormRegister.classList.add('open')
+        }
+        register.addEventListener('click', showauthFormRegister, deleteauthFormLogin)
+
+        function deleteauthFormRegister() {
+            autFormRegister.classList.remove('open')
+        }
+        authFormBtnRegister.addEventListener('click', showauthFormRegister)
+        authFormBtnRegister.addEventListener('click', deleteauthFormLogin)
+
+
+        // đăng nhập
+        function showauthFormLogin() {
+            // alert("SHOW")
+            autFormLogin.classList.add('open')
+        }
+        authFormBtnLogin.addEventListener('click', showauthFormLogin)
+        authFormBtnLogin.addEventListener('click', deleteauthFormRegister)
+
+        function deleteauthFormLogin() {
+            autFormLogin.classList.remove('open')
+        }
+
+        // Hàm ẩn modal (gỡ bỏ class open vào modal)
+        function hideModal() {
+            modal.classList.remove('open')
+        }
+
+        // Nghe hành vi click vào đăng ký
+        register.addEventListener('click', showModal)
+        register.addEventListener('click', deleteauthFormLogin)
+
+        // Nghe hành vi click vào đăng nhập
+        login.addEventListener('click', showModal)
+        login.addEventListener('click', showauthFormLogin)
+        login.addEventListener('click', deleteauthFormRegister)
+        
+        //
+        modal.addEventListener('click', hideModal)
+
+        // Ngừng nổi bọt
+        modalBody.addEventListener('click', function (event) {
+            event.stopPropagation()
+        })
+    </script>
+</body>
+</html>
